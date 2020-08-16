@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="Stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="top">
+        <div class="logo">VictorIDE</div>
+        <div class="band">
+            <div class="btns active" id="htmlBtn">HTML</div>
+            <div class="btns" id="cssBtn">CSS</div>
+            <div class="btns" id="jsBtn">Js</div>
+            <div class="btns active" id="outputBtn">OUTPUT</div>
+        </div>
+    </div>
+    <div class="panels">
+        <textarea id="htmlPanel" class="panel" spellcheck="false"><p id="paragraph">hello</p></textarea>
+        <textarea id="cssPanel" class="panel hidden" spellcheck="false">p{color: aqua; }</textarea>
+        <textarea id="jsPanel" spellcheck="false"
+            class="panel hidden">document.getElementById("paragraph").innerHTML = "hello world";</textarea>
+        <iframe id="outputPanel" class="panel"></iframe>
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
